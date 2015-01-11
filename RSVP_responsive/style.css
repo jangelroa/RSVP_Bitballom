@@ -1,0 +1,122 @@
+html, body, div{
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #3a4e7d;
+}
+
+.iphone {
+  background-image: url("./images/iphone_smaller.jpg");
+}
+
+.nexus {
+  background-image: url("./images/nexus_smaller.jpg");
+}
+
+.iphone, .nexus {
+  width: 400px;
+  height: 700px;
+  position: relative;
+  float: left;
+  display: inline;
+  border: 1px black solid;
+  margin-right: 30px;
+}
+
+iframe {
+  height: 495px;
+  position: absolute;
+  top: 93px;
+}
+
+.iframe1 {
+  width: 277px;
+  left: 58px;
+}
+
+.iframe2 {
+  width: 279px;
+  left: 57px;
+}
+
+.devices {
+  margin-top: 50px;
+  margin-left: 100px;
+  padding-left: auto;
+  padding-right: auto;
+}
+
+.title {
+  clear: left;
+}
+
+.title-box {
+  text-align: center;
+}
+
+.text-container {
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align:justify;
+}
+
+@media (max-width: 600px) {
+  .devices {
+    margin-top: 0px;
+    margin-left: -15px;
+  }
+
+  .text-container {
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align:justify;
+  }
+
+}
+
+
+
+/*#wrap { width: 600px; height: 390px; padding: 0; overflow: hidden; }
+#frame { width: 800px; height: 520px; border: 1px solid black; }
+#frame {
+    -ms-zoom: 0.75;
+    -moz-transform: scale(0.75);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.75);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.75);
+    -webkit-transform-origin: 0 0;
+}*/
+
+
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
